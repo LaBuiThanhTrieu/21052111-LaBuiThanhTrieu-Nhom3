@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Phần Bình Luận Khách Hàng</title>
+<link rel="stylesheet" href="bai1.css">
+</head>
+<body>
+
+<div class="comment-container">
+  <!-- Form nhập bình luận mới -->
+  <div class="comment-form">
+    <input type="text" id="name" placeholder="Tên của bạn..." />
+    <textarea id="comment" placeholder="Thêm bình luận của bạn..."></textarea>
+    <button type="button" onclick="submitComment()">Gửi Bình Luận</button>
+  </div>
+  
+  <!-- Nơi hiển thị bình luận -->
+  <div id="comments-display"></div>
+</div>
+
+<script>
+function submitComment() {
+  var name = document.getElementById('name').value.trim();
+  var comment = document.getElementById('comment').value.trim();
+  
+  if (name !== "" && comment !== "") {
+    // Tạo phần tử div mới cho bình luận
+    var newComment = document.createElement('div');
+    newComment.classList.add('comment');
+    newComment.innerHTML = '<strong>' + name + ':</strong> ' + comment;
+    
+    // Thêm bình luận mới vào nơi hiển thị
+    document.getElementById('comments-display').prepend(newComment);
+    
+    // Xóa nội dung trong input và textarea
+    document.getElementById('name').value = "";
+    document.getElementById('comment').value = "";
+  }
+}
+</script>
+
+</body>
+</html>

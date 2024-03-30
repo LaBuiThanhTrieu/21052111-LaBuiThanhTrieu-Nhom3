@@ -1,0 +1,167 @@
+
+.container {
+  width: 100px;
+  margin: 0 auto;
+  padding: 0 50px; /* Corrected colon */
+}
+.container1 li{
+  margin-right: 90px;
+  font-size: 30px;
+}
+
+header {
+  overflow: hidden;
+}
+
+header .logo {
+  width: 25%;
+  float: left;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+nav {
+  background: #828282;
+  border-bottom: 5px solid #D3D3D3;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Arial;
+  display: inline-block;
+  padding: 10px 10px;
+  
+}
+
+nav ul li a:hover {
+  background: #C6E2FF;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner video {
+  width: 100%;
+}
+
+.banner .banner-text {
+  position: absolute;
+  top: 10%;
+  font-family: Arial;
+  color: #F5FFFA;
+}
+
+main {
+  overflow: hidden;
+  padding: 4px 0;
+}
+
+main h3 {
+  color: #4fe70e;
+  font-weight: normal;
+  background: #0f0f10;
+  padding: 10px;
+}
+
+main .main-left {
+  width: 25%;
+  float: left;
+}
+
+main .main-left .category {
+  background: #3b3b36;
+  padding: 7px;
+}
+
+main .main-left .category ul li a {
+  text-decoration: none;
+  padding: 7px 0;
+  color: #efd910;
+  display: inline-block;
+}
+
+main .main-right{
+  width: 70%;
+  float: left;
+  padding-left: 35px;
+  box-sizing: border-box
+}
+main .main-right .intro .intro-img{
+  width: 36%;
+  float: left;
+}
+main .main-right .intro .intro-img img{
+  width: 100%;
+}
+main .main-right .intro .intro-test{
+  width: 60%;
+  float: right
+}
+main .main-right .intro .intro-test p{
+  line-height: 20px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+#footer
+ {
+  background-color: #554d4d;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-4 {
+  flex: 1 0 30%;
+  padding: 0 10px;
+}
+
+h2 {
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ddd;
+}
+
+.social-media {
+  text-align: left;
+}
+
+.social-media li {
+  display: inline-block;
+  margin: 0 10px;
+}
